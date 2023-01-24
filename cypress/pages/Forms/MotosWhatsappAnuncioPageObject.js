@@ -16,13 +16,13 @@ export class MotosWhatsappAnuncioPageObject {
 
         cy.scrollTo('bottom')
 
-        // cy.get('.tsG0HQh7bcmTha7pyanx-btn-close')
-        //     .should('be.visible')
-        //     .click()
+        cy.get('.tsG0HQh7bcmTha7pyanx-btn-close')
+            .should('be.visible')
+            .click()
 
-        // cy.get('.bGGcZJZR7IsEsQjTbspD-html-close-button')
-        //     .should('be.visible')
-        //     .click()
+        cy.get('.bGGcZJZR7IsEsQjTbspD-html-close-button')
+            .should('be.visible')
+            .click()
 
         cy.get('.css-1fh6fqw > .chakra-text')
             .should('be.visible')

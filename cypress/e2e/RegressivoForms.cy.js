@@ -1,6 +1,6 @@
 import { MotosConsorcioPageObject } from "../pages/Forms/MotosConsorcioPageObject";
 import { MotosFinanciamentoPageObject } from "../pages/Forms/MotosFinanciamentoPageObject";
-// import { MotosvalieSeuVeiculoPageObject } from "../pages/Forms/MotosvalieSeuVeiculoPageObject";
+import { MotosvalieSeuVeiculoPageObject } from "../pages/Forms/MotosvalieSeuVeiculoPageObject";
 import { MotosSeguroPageObject } from "../pages/Forms/MotosSeguroPageObject";
 import { MotosFaleConoscoObject } from "../pages/Forms/MotosFaleConoscoObject";
 import { MotosWhatsappPageObject } from "../pages/Forms/MotosWhatsappPageObject";
@@ -24,10 +24,10 @@ describe("Regressivo forms", () => {
 
         const seller = sellerFactory.Build();
         MotosConsorcioPageObject.Execute(seller);
-        // MotosFinanciamentoPageObject.Execute(seller);
-        // MotosvalieSeuVeiculoPageObject.Execute(seller); 
+        MotosFinanciamentoPageObject.Execute(seller);
+        MotosvalieSeuVeiculoPageObject.Execute(seller); 
         MotosSeguroPageObject.Execute(seller);
-        // MotosFaleConoscoObject.Execute();
+        MotosFaleConoscoObject.Execute();
         MotosWhatsappPageObject.Execute();
         MotosWhatsappAnuncioPageObject.Execute();
         MotosFinanciamentoAnuncioPageObject.Execute();
